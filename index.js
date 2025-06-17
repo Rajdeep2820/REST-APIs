@@ -26,6 +26,16 @@ app.get("/posts", (req,res)=>{
     res.render("index.ejs" , {posts});
 })
 
+app.get("/posts/new", (req,res)=>{
+res.render("new.ejs");
+})
+
+app.post("/posts" , (req,res)=>{
+    let {username , data} = req.body;
+    posts.push({username , data});
+    res.redirect("/posts"); 
+});
+
 const port = 3030;
 app.listen(port, () => {
  console.log("listening to port 3030");   
