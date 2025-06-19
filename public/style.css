@@ -28,7 +28,7 @@ body {
     color: white;
     font-size: 30px;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Libre Franklin", sans-serif; 
 }
 
 .anchor {
@@ -36,7 +36,9 @@ body {
     color: yellow;
     text-decoration: underline;
 }
-
+#blue{
+    color : blue;
+}
 .second {
     margin-top: 90px; /* Adds spacing below fixed header */
     padding: 15px;
